@@ -1,0 +1,45 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# CMS キャッシュ
+cache/
+tmp/
+logs/
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 環境ファイル
+.env
+.env.local
+.env.*.local
+
+# Basic認証
+.htaccess
+.htpasswd
+
+# アップロードファイル
+uploads/
+upload/
+files/
+
+# デザイン素材
+*.psd
+*.ai
+*.zip
+*.rar
+*.7z
+
+# バックアップ
+*.bak
+*.old
+*.orig
