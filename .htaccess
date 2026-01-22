@@ -1,0 +1,5 @@
+AuthUserFile /home/users/2/pya.jp-wmri05/web/test024/.htpasswd
+AuthGroupFile /dev/null
+AuthName "ベーシック認証"
+AuthType Basic
+require valid-user
