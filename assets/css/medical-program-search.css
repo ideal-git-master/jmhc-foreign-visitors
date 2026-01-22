@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap");
+:root {
+  --text-color: #191919;
+  --wh: #fff;
+  --bk: #191919;
+  --gray: #f4f4f4;
+  --green: #45b035;
+  --border-color: #f2f2f2;
+}
+
+@media screen and (max-width: 834px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 835px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pc-tb {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sp-tb {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .pc-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .sp-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .pc-xsl {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width:500px) {
+  .sp-xsl {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .pc-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .sp-xs {
+    display: none !important;
+  }
+}
+
+.medical-program-search {
+  margin-top: 4rem;
+}
+@media screen and (max-width: 834px) {
+  .medical-program-search {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+    display: none;
+  }
+}
+@media screen and (max-width: 834px) {
+  .medical-program-search__inner {
+    width: 100%;
+  }
+}
+.medical-program-search__wrapper {
+  background: url(../img/common/medical-program-search-bg.webp) no-repeat center/cover;
+  border-radius: 2rem;
+  padding: 2rem 5rem 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .medical-program-search__wrapper {
+    padding: 2rem 4rem 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .medical-program-search__wrapper {
+    padding: 2rem 3rem 3rem;
+  }
+}
+@media screen and (max-width: 834px) {
+  .medical-program-search__wrapper {
+    border-radius: 2rem 2rem 0 0;
+  }
+}
+.medical-program-search__content {
+  display: flex;
+  gap: 1rem;
+  margin-top: 6.5rem;
+}
+@media screen and (max-width: 1500px) {
+  .medical-program-search__content {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .medical-program-search__content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .medical-program-search__content {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .medical-program-search__content {
+    margin-top: 2rem;
+  }
+}
+.medical-program-search__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--wh);
+  display: flex;
+  align-items: center;
+}
+.medical-program-search__title::before {
+  content: "search";
+  font-family: "Material Symbols Outlined";
+  font-size: 3rem;
+  color: var(--wh);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100vmax;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.7rem;
+}
+.medical-program-search__form {
+  background-color: var(--wh);
+  border-radius: 1rem;
+  width: 100%;
+  padding-top: 4.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 640px) {
+  .medical-program-search__form {
+    padding-top: 2rem;
+  }
+}
+.medical-program-search__form-item--radio {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.medical-program-search__form-item--radio label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medical-program-search__form-item--radio:has(:checked) {
+  background-color: #333;
+  color: var(--wh);
+  border-radius: 100vmax;
+}
+.medical-program-search__form-item--radio-group {
+  background-color: #f4f4f4;
+  border-radius: 100vmax;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+@media screen and (max-width: 640px) {
+  .medical-program-search__form-item--radio-group {
+    margin: 0 2rem;
+  }
+}
+.medical-program-search__form-item--text, .medical-program-search__form-item--checkbox-group {
+  margin: 3rem 4rem 3rem;
+}
+@media screen and (max-width: 640px) {
+  .medical-program-search__form-item--text, .medical-program-search__form-item--checkbox-group {
+    margin: 2rem 2rem 2rem;
+  }
+}
+.medical-program-search__form-item--text dt, .medical-program-search__form-item--checkbox-group dt {
+  color: #008a70;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.medical-program-search__form-item--checkbox-group dd {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+@media screen and (max-width: 1500px) {
+  .medical-program-search__form-item--checkbox-group dd {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .medical-program-search__form-item--checkbox-group dd {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .medical-program-search__form-item--checkbox-group dd {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .medical-program-search__form-item--checkbox-group dd {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.medical-program-search__form-item--checkbox-group label {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 20rem;
+  height: 5rem;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1500px) {
+  .medical-program-search__form-item--checkbox-group label {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
+.medical-program-search__form-item--checkbox-group label:has(:checked) {
+  border: 2px solid var(--green);
+  position: relative;
+}
+.medical-program-search__form-item--checkbox-group label:has(:checked)::after {
+  content: "check";
+  font-family: "Material Symbols Outlined";
+  color: var(--green);
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1500px) {
+  .medical-program-search__form-item--checkbox-group label:has(:checked)::after {
+    right: 5px;
+  }
+}
+.medical-program-search__input--text {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 66rem;
+  height: 6rem;
+  padding: 1rem 1.5rem;
+}
+.medical-program-search__submit {
+  display: block;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin-top: 0;
+}
+.medical-program-search__button {
+  background-color: #ff9c00;
+  color: var(--wh);
+  font-size: 1.4rem;
+  border-radius: 100vmax;
+  width: 20rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=medical-program-search.css.map */
